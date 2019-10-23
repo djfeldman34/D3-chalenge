@@ -58,6 +58,8 @@ d3.csv("/assets/data/data.csv").then(function(bigData) {
   .attr("opacity", ".8")
   .attr("text", d => d.abbr);
 
+  
+
   var toolTip = d3.tip()
     .attr("class", "tooltip")
     .offset([80, -60])
@@ -76,6 +78,17 @@ d3.csv("/assets/data/data.csv").then(function(bigData) {
       toolTip.hide(data);
     });
 
+  var labelsGroup = chartGroup.selectAll("circles")
+  .data(bigData)
+  .enter()
+  .append("text")
+  .attr("x", d => xLinearScale(d.poverty))
+  .attr("y", d => yLinearScale(d.healthcare) + 7)
+  .attr("class", "axisText")
+  .attr("fill", "white")
+  .attr("text-anchor", "middle")
+  .text(d => d.abbr);
+
   // Create axes labels
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
@@ -83,6 +96,7 @@ d3.csv("/assets/data/data.csv").then(function(bigData) {
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .attr("class", "axisText")
+    .attr("text-anchor", "middle")
     .text("Healthcare");
 
   chartGroup.append("text")
