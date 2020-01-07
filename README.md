@@ -20,3 +20,13 @@ Using the D3 techniques we taught you in class, create a scatter plot that repre
 * Create and situate your axes and labels to the left and bottom of the chart.
 
 * Note: You'll need to use `python -m http.server` to run the visualization. This will host the page at `localhost:8000` in your web browser.
+
+# Conclusion
+
+I used JS and D3 to model the relationship between poverty and healthcare
+
+<img src=''>
+
+I included tooltips when you hover over the points on the graph
+
+It appears that there is no significant correlation between the data
