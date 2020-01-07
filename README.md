@@ -29,4 +29,4 @@ I used JS and D3 to model the relationship between poverty and healthcare
 
 I included tooltips when you hover over the points on the graph
 
-It appears that there is no significant correlation between the data
+It appears that there is no significant correlation between the data.  If anything, a slightly positive correlation.
