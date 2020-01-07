@@ -25,7 +25,7 @@ Using the D3 techniques we taught you in class, create a scatter plot that repre
 
 I used JS and D3 to model the relationship between poverty and healthcare
 
-<img src=''>
+<img src='/d3_data_journalism/assets/cap1.JPG'>
 
 I included tooltips when you hover over the points on the graph
 
